@@ -1,0 +1,38 @@
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@font-face {
+  font-family: 'AntipastoPro';
+  src: url('./assets/fonts/AntipastoPro-Extralight_trial.ttf') format('truetype');
+  font-weight: 200; /* optional but useful */
+  font-style: normal;
+}
+
+
+
+
+/* index.css or tailwind.css */
+.perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
