@@ -14,7 +14,7 @@ import Coleader1 from './assets/members/Bosskalan.png';
 import Coleader2 from './assets/members/Chakko.png';
 import Coleader3 from './assets/members/Willy.png';
 import Guardian from './assets/members/Pulickal.png';
-import Members1 from './assets/members/Akku.png';
+import Members1 from './assets/members/akku.png';
 import Members2 from './assets/members/Coleman.png';
 import Members3 from './assets/members/David.png';
 import Members4 from './assets/members/Godzin.png';
