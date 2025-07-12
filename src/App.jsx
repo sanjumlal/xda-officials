@@ -20,7 +20,7 @@ import Members3 from './assets/members/David.png';
 import Members4 from './assets/members/Godzin.png';
 import Members5 from './assets/members/Josutty.png';
 import Members6 from './assets/members/Nozy.png';
-import Members7 from './assets/members/Peter.png';
+import Members7 from './assets/members/peter.png';
 import Members8 from './assets/members/Riyan.png';
 import Members9 from './assets/members/Sneaky.png';
 import Members10 from './assets/members/Tom.png';
