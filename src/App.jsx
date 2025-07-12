@@ -1,9 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Assets from './pages/Assets.jsx';
+import Assets from './Pages/Assets.jsx';
+
+import Socials from './Pages/Socials.jsx';
+
+
 
 import FlipCard from './components/FlipCard.jsx';
-import Socials from './pages/Socials.jsx';
 import Founder from './assets/members/leo.png';
 import Leader1 from './assets/members/Sonny.png';
 import Leader2 from './assets/members/Zaicaz.png';
