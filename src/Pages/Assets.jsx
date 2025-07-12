@@ -5,6 +5,7 @@ import tshirt from '../assets/xda-tshirt.png';
 import tridentImage from '../assets/trident.png';
 import { Fade } from 'react-awesome-reveal';
 import { Helmet } from 'react-helmet';
+import GlareHover from '../components/GlareHover'; // CSS-based version
 
 const SectionDivider = () => (
   <hr className="border-gray-700 my-16 opacity-20" />
@@ -19,25 +20,34 @@ function AssetShowcase({ title, description, image, video, themeColor, imagePosi
     <Fade triggerOnce direction="up">
       <div className={`flex flex-col items-center gap-12 ${containerFlexDirection}`}>
         <div className="lg:w-1/2">
-          {isVideo ? (
-            <video
-              src={video}
-              autoPlay
-              muted
-              loop
-              className="rounded-lg shadow-xl w-full object-cover hover:scale-105 transition-transform duration-300"
-              preload="metadata"
-            >
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img
-              src={image}
-              alt={title}
-              className="rounded-lg shadow-xl w-full object-cover transition duration-300 transform hover:scale-105 hover:grayscale"
-              loading="lazy"
-            />
-          )}
+          <GlareHover
+            glareColor="#ffffff"
+            glareOpacity={0.3}
+            glareAngle={-30}
+            glareSize={250}
+            transitionDuration={800}
+            playOnce={false}
+            className="w-full"
+            style={{ height: 'auto' }}
+          >
+            {isVideo ? (
+              <video
+                src={video}
+                autoPlay
+                muted
+                loop
+                className="rounded-lg shadow-xl w-full object-cover hover:scale-105 transition-transform duration-300"
+                preload="metadata"
+              />
+            ) : (
+              <img
+                src={image}
+                alt={title}
+                className="rounded-lg shadow-xl w-full object-cover transition duration-300 transform hover:scale-105 hover:grayscale"
+                loading="lazy"
+              />
+            )}
+          </GlareHover>
         </div>
         <div className="lg:w-1/2 text-center lg:text-left space-y-4">
           <span className="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300 uppercase tracking-widest font-antipasto">
