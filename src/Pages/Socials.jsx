@@ -121,11 +121,14 @@ export default function Socials() {
           <Section title="" peopleArray={people.membersBottom} cols={3} dividerAfter />
         </section>
 
-        <footer className="bg-black text-gray-400 py-6 text-center border-t border-white/10 mt-16">
-          <p className="text-sm font-antipasto tracking-wider">
-            © {new Date().getFullYear()} XDA - Xtreme Dangerous Adolokam. All rights reserved.
-          </p>
-        </footer>
+         <footer className="border-t border-white/10 mt-16">
+  <div className="max-w-screen-lg mx-auto px-4 py-6 text-center text-gray-400">
+    <p className="text-sm font-antipasto tracking-wider">
+      © {new Date().getFullYear()} XDA - Xtreme Dangerous Adolokam. All rights reserved.
+    </p>
+ 
+  </div>
+</footer>
       </div>
     </>
   );

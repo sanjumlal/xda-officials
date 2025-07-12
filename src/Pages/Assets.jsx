@@ -5,7 +5,7 @@ import tshirt from '../assets/xda-tshirt.png';
 import tridentImage from '../assets/trident.png';
 import { Fade } from 'react-awesome-reveal';
 import { Helmet } from 'react-helmet';
-import GlareHover from '../components/GlareHover'; // CSS-based version
+import GlareHover from '../components/GlareHover';
 
 const SectionDivider = () => (
   <hr className="border-gray-700 my-16 opacity-20" />
@@ -18,8 +18,8 @@ function AssetShowcase({ title, description, image, video, themeColor, imagePosi
 
   return (
     <Fade triggerOnce direction="up">
-      <div className={`flex flex-col items-center gap-12 ${containerFlexDirection}`}>
-        <div className="lg:w-1/2">
+      <div className={`flex flex-col ${containerFlexDirection} gap-8 items-center text-center lg:text-left px-4 sm:px-6`}>
+        <div className="lg:w-1/2 w-full">
           <GlareHover
             glareColor="#ffffff"
             glareOpacity={0.3}
@@ -49,14 +49,14 @@ function AssetShowcase({ title, description, image, video, themeColor, imagePosi
             )}
           </GlareHover>
         </div>
-        <div className="lg:w-1/2 text-center lg:text-left space-y-4">
+        <div className="lg:w-1/2 space-y-3 sm:space-y-4">
           <span className="text-xs bg-white/10 px-3 py-1 rounded-full text-gray-300 uppercase tracking-widest font-antipasto">
             XDA Signature
           </span>
-          <h2 className={`text-3xl sm:text-4xl font-bold tracking-wider ${textColorClass} font-antipasto uppercase`}>
+          <h2 className={`text-2xl sm:text-3xl font-bold tracking-wider ${textColorClass} font-antipasto uppercase`}>
             {title}
           </h2>
-          <p className="text-gray-200 leading-relaxed text-base sm:text-lg font-antipasto tracking-wide">
+          <p className="text-gray-200 leading-relaxed text-sm sm:text-base font-antipasto tracking-wide">
             {description}
           </p>
         </div>
@@ -74,21 +74,25 @@ export default function Assets() {
       </Helmet>
       <Navbar />
       <div className="min-h-screen pt-28 bg-gradient-to-br from-zinc-900 via-black to-zinc-800 text-white font-antipasto">
-        <section className="max-w-screen-xl mx-auto px-4 space-y-32">
+        <section className="max-w-screen-xl mx-auto space-y-32">
 
-          {/* HEADER */}
+          {/* Header */}
           <Fade triggerOnce direction="down">
-            <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl font-antipasto tracking-[0.3em] uppercase text-white">
-                X T R E M E &nbsp; D A N G E R O U S &nbsp; A S S E T S
-              </h1>
-              <p className="mt-4 text-gray-400 text-sm tracking-wide font-antipasto">
+            <div className="text-center px-4 sm:px-0">
+           <h1 className="text-xl sm:text-3xl font-antipasto text-white uppercase text-center">
+  <span className="block sm:hidden">Xtreme Dangerous Assets</span>
+  <span className="hidden sm:block tracking-[0.3em]">
+    X T R E M E &nbsp; D A N G E R O U S &nbsp; A S S E T S
+  </span>
+</h1>
+
+              <p className="mt-4 text-gray-400 text-sm sm:text-base tracking-wide font-antipasto">
                 Showcase of what we ride, wear, and represent.
               </p>
             </div>
           </Fade>
 
-          {/* Trident */}
+          {/* Sections */}
           <AssetShowcase
             title="Trident"
             description="The signature XDA beast on wheels. The Trident is built for domination with unmatched custom styling and presence."
@@ -99,7 +103,6 @@ export default function Assets() {
 
           <SectionDivider />
 
-          {/* Hoodie */}
           <AssetShowcase
             title="XDA Hoodie"
             description="A symbol of loyalty and darkness. The official XDA hoodie blends rebellion with iconic black and bold trims."
@@ -110,7 +113,6 @@ export default function Assets() {
 
           <SectionDivider />
 
-          {/* T-Shirt */}
           <AssetShowcase
             title="XDA T-Shirt"
             description="Ride casual, ride bold. The XDA tee is made for those who carry the gang spirit on and off the game."
@@ -121,18 +123,17 @@ export default function Assets() {
 
           <SectionDivider />
 
-          {/* Cinematic Section */}
+          {/* Cinematic Showcase */}
           <Fade triggerOnce direction="up">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-bold text-purple-400 font-antipasto uppercase tracking-wider">
+            <div className="text-center space-y-6 px-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-purple-400 font-antipasto uppercase tracking-wider">
                 Cinematic Showcase
               </h2>
-              <p className="text-gray-300 text-sm font-antipasto tracking-wide">
+              <p className="text-gray-300 text-sm sm:text-base font-antipasto tracking-wide">
                 Visuals that capture the soul of XDA’s assets in motion.
               </p>
 
-              {/* Cinematic Video 1 */}
-              <div className="w-full relative pb-[56.25%] max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
+              <div className="relative pb-[56.25%] w-full max-w-full sm:max-w-2xl mx-auto rounded-lg overflow-hidden shadow-xl">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
                   src="https://player.cloudinary.com/embed/?cloud_name=dciwgjqae&public_id=Showcase-Video-Zodiac_hmvsjb&profile=cld-looping"
@@ -143,8 +144,7 @@ export default function Assets() {
                 ></iframe>
               </div>
 
-              {/* Cinematic Video 2 */}
-              <div className="w-full relative pb-[56.25%] max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl mt-8">
+              <div className="relative pb-[56.25%] w-full max-w-full sm:max-w-2xl mx-auto rounded-lg overflow-hidden shadow-xl mt-8">
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
                   src="https://player.cloudinary.com/embed/?cloud_name=dciwgjqae&public_id=Showcase_Video_h1hfjv&profile=cld-looping"
