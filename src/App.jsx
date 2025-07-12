@@ -7,20 +7,20 @@ import Socials from './Pages/Socials.jsx';
 
 
 import FlipCard from './components/FlipCard.jsx';
-import Founder from './assets/members/leo.png';
+import Founder from './assets/members/Leo.png';
 import Leader1 from './assets/members/Sonny.png';
 import Leader2 from './assets/members/Zaicaz.png';
 import Coleader1 from './assets/members/Bosskalan.png';
 import Coleader2 from './assets/members/Chakko.png';
 import Coleader3 from './assets/members/Willy.png';
 import Guardian from './assets/members/Pulickal.png';
-import Members1 from './assets/members/akku.png';
+import Members1 from './assets/members/Akku.png';
 import Members2 from './assets/members/Coleman.png';
 import Members3 from './assets/members/David.png';
 import Members4 from './assets/members/Godzin.png';
 import Members5 from './assets/members/Josutty.png';
 import Members6 from './assets/members/Nozy.png';
-import Members7 from './assets/members/peter.png';
+import Members7 from './assets/members/Peter.png';
 import Members8 from './assets/members/Riyan.png';
 import Members9 from './assets/members/Sneaky.png';
 import Members10 from './assets/members/Tom.png';
